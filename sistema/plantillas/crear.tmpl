@@ -1,0 +1,48 @@
+{{define "crear"}}
+{{template "cabecera"}}
+
+    <br>
+    <div class="card">
+        <div class="card-header">
+            Empleados
+        </div>
+
+        <div class="card-body">
+            <form method="post" action="/insertar">
+
+                <div class="form-group">
+                <label for="">Nombre:</label>
+                <input type="text"
+                    class="form-control" name="nombre" id="nombre" aria-describedby="helpId" placeholder="">
+                <small id="helpId" class="form-text text-muted">Escribe tu Nombre</small>
+                </div>
+
+                <div class="form-group">
+                <label for="">Apellido Paterno:</label>
+                <input type="text"
+                    class="form-control" name="apellidoPaterno" id="apellidoPaterno" aria-describedby="helpId" placeholder="">
+                <small id="helpId" class="form-text text-muted">Escribe tu Apellido Paterno</small>
+                </div>
+
+                <div class="form-group">
+                <label for="">ApellidoMaterno:</label>
+                <input type="text"
+                    class="form-control" name="apellidoMaterno" id="apellidoMaterno" aria-describedby="helpId" placeholder="">
+                <small id="helpId" class="form-text text-muted">Escribe tu Apellido Materno</small>
+                </div>
+
+                <div class="form-group">
+                <label for="">Correo:</label>
+                <input type="email" class="form-control" name="correo" id="correo" aria-describedby="emailHelpId" placeholder="">
+                <small id="emailHelpId" class="form-text text-muted">Escribe tu Correo</small>
+                </div>
+
+                <button type="submit" class="btn btn-success">Agregar nuevo empleado</button>
+        
+                b4 <a name="" id="" class="btn btn-primary" href="/" role="button">Cancelar</a>
+
+            </form>
+        </div>
+    </div>
+
+{{end}}
